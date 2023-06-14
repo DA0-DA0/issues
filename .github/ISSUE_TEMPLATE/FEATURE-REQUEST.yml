@@ -1,0 +1,41 @@
+# Based on: https://github.com/stevemao/github-issue-templates
+
+name: "💡 Feature Request"
+description: Create a new ticket for a new feature request
+title: "💡 [REQUEST] - <title>"
+labels: [
+  "question"
+]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: "Summary"
+      description: Provide a brief explanation of the feature
+      placeholder: Describe in a few lines your feature request
+    validations:
+      required: true
+  - type: textarea
+    id: basic_example
+    attributes:
+      label: "User Story"
+      description: Write a brief user story involving your feature.
+      placeholder: As a <role>, I want to have <feature request> so I can <goal>.
+    validations:
+      required: true
+  - type: textarea
+    id: reference_issues
+    attributes:
+      label: "Reference Issues or Examples"
+      description: Reference other related issues or provide examples relevant for your feature request.
+      placeholder: "#Issues IDs"
+    validations:
+      required: false
+  - type: textarea
+    id: unresolved_question
+    attributes:
+      label: "Unresolved questions"
+      description: What questions still remain unresolved ?
+      placeholder: Identify any unresolved issues.
+    validations:
+      required: false
